@@ -1,5 +1,9 @@
 import streamlit as st
-
-color = st.color_picker('Pick A Color', '#00f900')
-st.write('The current color is', color)
-
+while True:
+  color = st.color_picker('Choose Color Of Text', '#00f900')
+  
+  if color = '':
+    Print("Select Color")
+  else:
+    text = input("Input Mesaage")
+    st.write(text, color)
