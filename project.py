@@ -1,5 +1,5 @@
 import streamlit as st
 while True:
-  color = st.color_picker('Choose Color Of Text', '#00f900')
+  coolor = st.color_picker('Choose Color Of Text', '#00f900')
   text = st.text_input("Input Mesaage")
-  st.write(text, color = color)
+  st.write(text, color = coolor)
