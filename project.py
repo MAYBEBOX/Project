@@ -6,4 +6,4 @@ def get_color_escape(r, g, b, background=False):
 
 value = st.color_picker('Choose Color Of Text', '#00f900')
 text = st.text_input("Enter Text: ")
-st.write("u"=get_color_escape(255, 128, 0) + get_color_escape(80, 30, 60, True)+ text + RESET)
+st.write("u"+get_color_escape(255, 128, 0) + get_color_escape(80, 30, 60, True)+ text + RESET)
