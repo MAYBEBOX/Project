@@ -1,9 +1,7 @@
 import streamlit as st
-from PIL import ImageColor
+from colorir import HexRGB, sRGB
 
 value = st.color_picker('Choose Color Of Text', '#00f900')
 text = st.text_input("Enter Text: ")
-st.write(text)
-color = ImageColor.getcolor(text, "RGB")
-
-st.write(text, color = color)
+rgb = HexRGB(value).rgb()  
+st.write(text, color = rgb)
