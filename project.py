@@ -1,4 +1,5 @@
 import streamlit as st
+import sys
 
 RESET = '\033[0m'
 def get_color_escape(r, g, b, background=False):
