@@ -7,4 +7,5 @@ def get_color_escape(r, g, b, background=False):
 
 value = st.color_picker('Choose Color Of Text', '#00f900')
 text = st.text_input("Enter Text: ")
+st.write("\033[38;5;4m")
 st.write(get_color_escape(255, 128, 0) + " "+text + get_color_escape(80, 30, 60, True))
