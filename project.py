@@ -6,4 +6,4 @@ def hex_to_rgb(hex):
 value = st.color_picker('Choose Color Of Text', '#00f900')
 text = st.text_input("Enter Text: ")
  
-st.write(hex_to_rgb(text))
+st.write(text, color = hex_to_rgb)
