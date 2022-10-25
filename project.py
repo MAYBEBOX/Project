@@ -4,7 +4,7 @@ import math
 
 Height=st.text_input("Enter your height in centimeters: ")
 Weight=st.text_input("Enter your Weight in Kg: ")
-Height = Height/int(100)
+Height = Height/float(100)
 BMI=Weight/(Height*Height)
 st.write("your Body Mass Index is: ",BMI)
 if(BMI>0):
