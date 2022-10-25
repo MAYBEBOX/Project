@@ -3,7 +3,7 @@ import streamlit as st
 Height=st.text_input("Enter your height in centimeters: ")
 Weight=st.text_input("Enter your Weight in Kg: ")
 Height = float(Height)/100
-BMI= int(Weight)/(float(Height)*float(Height))
+BMI= float(Weight)/(Height*Height)
 st.write("your Body Mass Index is: ",BMI)
 if(BMI>0):
 	if(BMI<=16):
