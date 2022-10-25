@@ -1,10 +1,19 @@
 import streamlit as st
 import sys
-
-RESET = '\033[0m'
-def get_color_escape(r, g, b, background=False):
-    return '\033[{};2;{};{};{}m'.format(48 if background else 38, r, g, b)
-
-value = st.color_picker('Choose Color Of Text', '#00f900')
-text = st.text_input("Enter Text: ")
-st.write(get_color_escape(255, 128, 0) +get_color_escape(80, 30, 60, True) +text + RESET)
+Height=float(st.text_input("Enter your height in centimeters: "))
+Weight=float(st.text_input("Enter your Weight in Kg: "))
+Height = Height/100
+BMI=Weight/(Height*Height)
+st.write("your Body Mass Index is: ",BMI)
+if(BMI>0):
+	if(BMI<=16):
+		print("you are severely underweight")
+	elif(BMI<=18.5):
+		print("you are underweight")
+	elif(BMI<=25):
+		print("you are Healthy")
+	elif(BMI<=30):
+		print("you are overweight")
+	else: print("you are severely overweight")
+else:
+    st.write("enter valid details")
