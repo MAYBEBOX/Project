@@ -1,6 +1,5 @@
 import streamlit as st
-Height="0"
-Weight="0"
+
 Height=st.number_input("Enter your height in centimeters: ")
 Weight=st.number_input("Enter your Weight in Kg: ")
 Height = float(Height)/100
